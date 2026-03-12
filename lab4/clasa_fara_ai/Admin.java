@@ -19,6 +19,10 @@ public class Admin extends User {
         this.superAdmin = false;
     }
 
+    public void promoteToSuperAdmin() {
+        this.superAdmin = true;
+    }
+
     public String getDepartment() { return department; }
     public void setDepartment(String department) { this.department = department; }
     public boolean isSuperAdmin() { return superAdmin; }
