@@ -27,6 +27,10 @@ public class Client extends User {
         super(email, passwordHash, firstName, lastName, phoneNumber, UserRole.CLIENT);
     }
 
+    public String getFullProfile() {
+        return getFullName() + " | " + getEmail() + " | " + getPhoneNumber();
+    }
+
     public List<Address> getAddresses() { throw new UnsupportedOperationException("Not implemented yet"); }
     public Cart getCart() { throw new UnsupportedOperationException("Not implemented yet"); }
     public void setCart(Cart cart) { throw new UnsupportedOperationException("Not implemented yet"); }
